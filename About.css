@@ -1,0 +1,93 @@
+body {
+    margin:0;
+    }
+    
+    .background{
+      width: 100vw;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1685914999/Sanaa%27s%20World/About-Sasral.png");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .links {
+        position: fixed;
+        left: 10px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-size:x-large;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+      .links a {
+        color: #FFF9E3;
+        text-decoration: none;
+      }
+      
+      .links a:hover {
+        text-decoration: none;
+      }
+
+      .About {
+        position: fixed;
+        left: 20%;
+        top:30px;
+        font-family: Garamond, serif;
+        color: #3c7089;
+        font-size: 55px;
+      }
+
+      .Abouttext {
+        background-color: #3c7089;
+        
+       position: fixed;
+        left: 20px;
+        bottom: 20px;
+        width: 90vh;
+        height: 60%;
+        overflow: scroll;
+        margin: 0 auto;
+        text-align: start;
+      }
+ 
+   
+      .paragraph {
+        font-family: Garamond, serif;
+        color:#FFF9E3;
+        font-size: 3.5vh;
+        margin-left: 15px;
+        margin-right: 5px;
+        text-decoration: none;
+        color: #FFF9E3;
+      }
+      
+      .paragraph a {
+        color: #FFF9E3;
+        text-decoration: none;
+      }
+      
+
+      .booklist li {
+        font-family: Garamond; serif;
+        color: #FFF9E3;
+        font-size: 3vh;
+        margin-left: 10px;
+      }
+    
+    .caption {
+      font-family: Garamond; serif;
+      color: #FFF9E3;
+      font-size: 2.5vh;
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+    }

@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    background-image: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1685477365/Sanaa%27s%20World/Forest_Now_yzniy8.png");
+     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    }
+      
+      .time {
+        display: block;
+      }
+      
+      .date {
+        display: block;
+        margin-top: 5px;
+      }
+
+      .container{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-size:x-large; 
+        font-style: italic;
+        text-decoration: none;
+        text-align: right;
+      }
+      .links{
+        position: fixed;
+        left: 10px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-size:x-large;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+      .links a {
+        color: #FFF9E3;
+        text-decoration: none;
+      }
+      
+      .links a:hover {
+        text-decoration: none;
+      }
+      .PageTitle h1{
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-family: Garamond, serif;
+        font-size: 40px;
+        font-weight: lighter;
+        font-style: italic;
+        text-size-adjust: auto;
+        position: fixed;
+        bottom: 30%;
+        left: 20px;
+      }
+
+      .Status{
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-size: 4vh;
+        position: fixed;
+        top: 70%;
+        left: 20px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: start;
+      }
+        
+     

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Projects.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="Links">
+        <a href="Home.html">Home</a>
+    </div>
+
+    <div class="wrapper">
+      <div class="box" id="boxA" onclick="openModal('modal-A')">
+        <p>This is box A.</p>
+      </div>
+      <div class="box" id="boxB" onclick="openModal('modal-B')">
+        <p>This is box B.</p>
+      </div>
+      <div class="box" id="boxC" onclick="openModal('modal-C')">
+        <p>This is box C.</p>
+      </div>
+      <!-- Add more boxes with their own unique IDs -->
+    </div>
+    
+    <!-- Modals -->
+    <div id="modal-A" class="modal" onclick="closeModal('modal-A')">
+      <div class="modal-content">
+        <div class="modal-left">
+          <img src="#" alt="Image">
+        </div>
+        <div class="modal-right">
+          <h2 class="ProjectTitle">Around the Corner</h2>
+          <p class="projdesc">Text content for box A goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-B" class="modal" onclick="closeModal('modal-B')">
+      <div class="modal-content">
+        <div class="modal-left">
+          <img src="#" alt="Image">
+        </div>
+        <div class="modal-right">
+          <h2 class="ProjectTitle">Title A</h2>
+          <p class="projdesc">Text content for box B goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-C" class="modal" onclick="closeModal('modal-C')">
+      <div class="modal-content">
+        <div class="modal-left">
+          <img src="#" alt="Image">
+        </div>
+        <div class="modal-right">
+          <h2 class="ProjectTitle">Title A</h2>
+          <p class="projdesc">Text content for box C goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Add modals for other boxes (B, C, D, E, F) in a similar manner -->
+    
+
+    
+    <script>
+  function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+  }
+
+  function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+  }
+
+// Position the boxes dynamically
+window.addEventListener("DOMContentLoaded", positionBoxes);
+
+function positionBoxes() {
+  var boxes = document.getElementsByClassName("box");
+  var viewportWidth = window.innerWidth;
+  var viewportHeight = window.innerHeight;
+  var boxWidth = boxes[0].offsetWidth;
+  var boxHeight = boxes[0].offsetHeight;
+
+  for (var i = 0; i < boxes.length; i++) {
+    var box = boxes[i];
+    var leftPos = getRandomPosition(0, viewportWidth - boxWidth);
+    var topPos = getRandomPosition(0, viewportHeight - boxHeight);
+    box.style.left = leftPos + "px";
+    box.style.top = topPos + "px";
+  }
+}
+
+function getRandomPosition(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Call the positionBoxes function when the DOM content is loaded
+window.addEventListener("DOMContentLoaded", positionBoxes);
+
+
+    </script>
+    

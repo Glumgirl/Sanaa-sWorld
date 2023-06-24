@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Now.css">
+</head>
+<body>
+  <div class="container">
+    <div class="time-date">
+      <span class="time" id="time"></span>
+      <span class="date" id="date"></span>
+    </div>
+  </div>
+  <div class="links">
+    <a href="home.html">Home</a>
+    <a href="garden.html">Garden</a>
+    
+    
+  </div>
+
+<div class="PageTitle">
+  <h1>
+    Now
+  </h1>
+</div>
+
+<div class="Status">
+  Right now is a really busy time - I'm trying to make my own portfolio and it's scary to put yourself out there.
+  I just want it to be interesting enough for them to want to talk to me. I think I am much 
+  better in person.
+  <p> As always, please check out my "garden"!</p>
+</div>
+  <script>
+    // Function to update the time and date
+    function updateTime() {
+      var now = new Date();
+      var time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+      var date = now.toLocaleDateString();
+  
+      document.getElementById('time').innerHTML = time;
+      document.getElementById('date').innerHTML = date;
+    }
+  
+    // Update time initially
+    updateTime();
+  
+    // Update time every second
+    setInterval(updateTime, 1000);
+  </script>
+  
+</body>
+</html>

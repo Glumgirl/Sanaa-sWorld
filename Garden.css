@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+    background: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1685477364/Sanaa%27s%20World/Forest_-_black_garden_g2rusa.png");
+     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    }
+
+    .links{
+        position: fixed;
+        left: 10px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-size:x-large;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+      .links a {
+        color: #FFF9E3;
+        text-decoration: none;
+      }
+
+      .Arena-container1 {
+        width: 45%; /* Set the desired width for the container */
+        height: 75%; /* Set the desired height for the container */
+        position: fixed;
+        top: 20%;
+        left: 10px;
+      }
+      
+      .Arena-container1 iframe {
+        width: 100%; /* Make the iframe fill the container width */
+        height: 100%; /* Make the iframe fill the container height */
+      }
+      
+      .Arena-container2 {
+        width: 45%;
+        height: 75%;
+        position: fixed;
+        right: 10px;
+      }
+      .Arena-container2 iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .description{
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        font-size: 3vh;
+        position: absolute;
+        right: 20px;
+        bottom: 35px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: start;
+      }
+
+      @media (max-width: 768px) {
+        .description{
+            font-size: 12px; /* Adjust the font size for smaller screens */
+            position: absolute;
+            right: 3px;
+        }
+        
+      }
+    

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+
+</head>
+
+<!-- Background 1 div = clouds, Background 2 div = sea -->
+
+<body>
+    <div class="background backgroundOne">
+        <h2 id="sitetitle">Sanaa's World</h2>
+    <a href="Blog.html", class="text PageLinks">Blog</a> 
+    <a href="Projects.html", class="text PageLinks">Projects</a>
+   <a href="About.html", class="text PageLinks">About</a>
+   <a href="Now.html", class="text PageLinks">Now</a>
+   <div class="listeningto">
+   <h3> Listening to: Floating Mountains by Soshi Takeda </h3> 
+  </div>
+</div>
+
+<!-- <div class="background backgroundTwo"></div> -->
+
+<div class="backgroundTwo">
+  <video class="video-background" autoplay loop muted>
+    <source src="https://res.cloudinary.com/dbpmxkrgz/video/upload/v1686150894/Sanaa%27s%20World/Sea_-_Sanaas_World_2_ohsdpe.mp4">
+  </video>
+  <div class="overlay"></div>
+</div> 
+
+<div class="credit">
+  Clouds by <a href="https://unsplash.com/@billy_huy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Billy Huynh</a> 
+  <p class="creditsea">Sea by <a href="https://unsplash.com/de/@eadesstudio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Eades</a>
+  </p>
+</div>
+
+   <!-- ARCHIVING DATE AND TIME FOR NOW BECAUSE IT'S UNNECESSARY AND COMPLICATES THINGS LOL MAYBE ONE DAY   
+   <head>
+     <title>Local Time and Date</title>
+     <script>
+       // Function to update the time and date
+       function updateTime() {
+         var now = new Date(); // Get the current date and time
+         var time = now.toLocaleTimeString(); // Get the local time as a string
+         var date = now.toLocaleDateString(); // Get the local date as a string
+         var day = now.getDate();
+      var options = {  month: 'long', year: 'numeric' };
+      var date = day + getOrdinalIndicator(day) + ' ' + now.toLocaleDateString(undefined, options);
+
+      // Function to get the ordinal indicator for the day of the month
+      function getOrdinalIndicator(day) {
+        var indicator;
+        if (day === 1 || day === 21 || day === 31) {
+          indicator = 'st';
+        } else if (day === 2 || day === 22) {
+          indicator = 'nd';
+        } else if (day === 3 || day === 23) {
+          indicator = 'rd';
+        } else {
+          indicator = 'th';
+        }
+        return indicator;
+      }
+
+         
+         // Update the HTML elements with the time and date
+         document.getElementById("time").textContent = time;
+         document.getElementById("date").textContent = date;
+       }
+   
+       // Call the updateTime function every second
+       setInterval(updateTime, 1000);
+     </script>
+   </head>
+   <body>
+     
+      <p> <span id="date"></span></p> 
+      <p> <span id="time"></span></p>
+    
+   </body>
+   
+   
+    </div>
+
+    
+</body>
+</html>
