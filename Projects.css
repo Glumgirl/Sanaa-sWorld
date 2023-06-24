@@ -7,7 +7,7 @@ body {
   background-size: cover;
   background-position: fixed;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: hidden; /* Enable vertical scrolling */
+  overflow-y: scroll; /* Enable vertical scrolling */
 }
   
 
@@ -47,7 +47,7 @@ background-size: cover;
 .box {
 position: absolute;
 border: 2px dotted #FFF9E3;
-padding: 20px;
+padding: 0px;
 font-size: 2vh;
 background-color: rgba(217, 217, 217, 0.3);
 font-family: garamond, serif;
@@ -56,7 +56,16 @@ color: #FFF9E3;
 width: 200px;
 height: 200px;
 cursor:pointer;
+overflow: hidden;
 }
+
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image will fill the box while maintaining aspect ratio */
+}
+
 
 .modal {
 display: none;
@@ -65,7 +74,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(60, 112, 137, 0.4);
+background-color: rgba(60, 112, 137, 0.8);
 z-index: 9999;
 }
 
@@ -84,9 +93,25 @@ padding: 20px;
 .modal-right {
 flex: 2;
 padding: 20px;
+top: 50%;
 }
 
 .modal img {
 max-width: 100%;
 max-height: 100%;
+background-size: cover;
+top: 50%;
+}
+
+.ProjectTitle{
+  font-family: Garamond;
+  font-size: 80px;
+  color: #FFF9E3;
+}
+
+.projdesc {
+  font-family: Garamond;
+  font-size: 20px;
+  color: #FFF9E3;
+  font-weight: 300;
 }

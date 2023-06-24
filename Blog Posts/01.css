@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1685478029/Sanaa%27s%20World/Midlight_under_the_sea_jgasow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+
+  #post-background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+ display: flex;
+    flex-direction: column;   
+  }
+  
+  .quote{
+    font-style: italic;
+    margin-bottom: 0;
+    font-family: Garamond, serif;
+    color:#FFF9E3;
+    margin-left: 10px;
+    margin: right 10px;
+    font-size: 25px;
+  }
+  .text.PageLinks {
+    font-family: Garamond, serif;
+    color: #FFF9E3;
+    font-size:x-large;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  header h1 {
+    font-family: Garamond, serif;
+    color:#FFF9E3;
+    font-weight: 500;
+    font-size: 70px; /* Adjust the value to change the font size */
+    margin-left: 30px;
+  }
+  
+  .article-content {
+    border: 1px dashed #FFF9E3;
+    background-color: rgba(60, 112, 137, 0.8);
+    padding: 0;
+    display: inline-block;
+    margin-left: 30%;
+    margin-bottom: 0; /* Set margin-bottom to 0 */
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .article-content .paragraph {
+    margin-bottom: 0;
+    font-family: Garamond, serif;
+    color:#FFF9E3;
+    margin-left: 10px;
+    margin: right 10px;
+    font-size: 18px;
+
+
+  }
+  
