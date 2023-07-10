@@ -89,9 +89,9 @@ body {
   color: #FFF9E3;
   font-family: Garamond, serif;
   font-size: 65px;
-  font-weight: normal;
+  font-weight: lighter;
   position: absolute;
-  bottom: -68px;
+  bottom: -65px;
   right: 0;
   text-size-adjust: auto;
   }
