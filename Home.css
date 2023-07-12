@@ -149,11 +149,13 @@ body {
 } */
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width:1023px) {
+/* @media screen and (min-width: 768px) and (max-width:1023px) {
     body {
         background-color:yellow;
     }
-}
+} */
+
+
 
 /* Mobile phones */
 @media only screen and (max-width: 768px) {
@@ -169,7 +171,7 @@ body {
     position:absolute;
     margin-bottom: 5%;
     margin-right: 0%;
-    margin-top:200%;
+    margin-top:190%;
     width: 100%;
     padding: 1vh;
     text-align: right;
