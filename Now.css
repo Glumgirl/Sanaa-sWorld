@@ -77,12 +77,12 @@ body {
         .Status{
           font-size: 2.6vh;
           max-width: 70%;
-          position: fixed;
+          position: absolute;
           top:60%
         }
 
         .PageTitle h1 {
-          position: fixed;
+          position: absolute;
           bottom: 40%;
         }
       }
