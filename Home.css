@@ -1,3 +1,10 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 
 body {
   margin:0;
@@ -179,6 +186,19 @@ body {
     padding: 1vh;
     text-align: right;
     }
+  }
+
+  #sitetitle {
+    margin-top: 0;
+  color: #FFF9E3;
+  font-family: Garamond, serif;
+  font-size: 6vh;
+  font-weight: lighter;
+  position: absolute;
+  bottom: -6.5vh;
+  right: 0;
+  text-size-adjust: auto;
+  z-index: 9999;
   }
   
   /* #date {
