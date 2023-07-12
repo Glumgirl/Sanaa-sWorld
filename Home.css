@@ -157,6 +157,11 @@ body {
 
 /* Mobile phones */
 @media only screen and (max-width: 768px) {
+  
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
 .credit {
     font-family: Garamond, serif;
     color: #FFF9E3;
