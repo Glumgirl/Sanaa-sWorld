@@ -175,24 +175,26 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  
+  /* CSS rules for smaller screens */
+
   body {
     position: relative;
     overflow-x: hidden;
   }
-.credit {
+
+  .credit {
     font-family: Garamond, serif;
     color: #FFF9E3;
-    font-size: 1.5vh; /* Adjust the font size as per your preference */
-    position:absolute;
-    margin-bottom: 5%;
-    margin-right: 0%;
-    margin-top:190%;
-    width: 100%;
-    padding: 1vh;
+    font-size: 12px; /* Adjust the font size as per your preference */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px;
     text-align: right;
-    }
   }
+}
+
   /* .popup-content {
     background-color: #fff;
     padding: 20px;
