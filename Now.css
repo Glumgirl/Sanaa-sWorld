@@ -51,7 +51,7 @@ body {
         font-family: Garamond, serif;
         color: #FFF9E3;
         font-family: Garamond, serif;
-        font-size: 40px;
+        font-size: 6vh;
         font-weight: lighter;
         font-style: italic;
         text-size-adjust: auto;
@@ -73,3 +73,16 @@ body {
       }
         
      
+      @media only screen and (max-width: 768px) {
+        .Status{
+          font-size: 2.6vh;
+          max-width: 70%;
+          position: fixed;
+          top:60%
+        }
+
+        .PageTitle h1 {
+          position: fixed;
+          bottom: 40%;
+        }
+      }
