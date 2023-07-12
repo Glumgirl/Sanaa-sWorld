@@ -180,7 +180,7 @@ body {
       font-family: Garamond, serif;
       color: #FFF9E3;
       font-size: 1.5vh; /* Adjust the font size as per your preference */
-      position:absolute;
+      position:relative;
       margin-bottom: 5%;
       margin-right: 0%;
       margin-top:200%;
