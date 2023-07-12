@@ -170,6 +170,10 @@ body {
 /* Mobile phones */
 @media only screen and (max-width: 768px) {
   
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
 .credit {
     font-family: Garamond, serif;
     color: #FFF9E3;
@@ -177,12 +181,12 @@ body {
     position:absolute;
     margin-bottom: 5%;
     margin-right: 0%;
-    margin-top:170%;
+    margin-top:180%;
     width: 100%;
     padding: 1vh;
     text-align: right;
     }
-  
+  }
 
   #sitetitle {
     margin-top: 0;
@@ -196,7 +200,6 @@ body {
   text-size-adjust: auto;
   z-index: 9999;
   }
-}
   
   /* #date {
   margin: top 0;
