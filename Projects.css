@@ -120,9 +120,18 @@ overflow: hidden;
   font-family: Garamond;
   font-size: 3.5vh;
   color: #FFF9E3;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 20px;
   text-align: left;
+}
+
+.furtherlinks {
+  font-size: 2vh;
+  font-family: Garamond;
+  color: #FFF9E3;
+  font-weight: bold;
+  text-align:left;
+
 }
 
 @media only screen and (max-width: 768px){
