@@ -33,7 +33,7 @@ body {
     font-family: Garamond, serif;
     color: #FFF9E3;
     font-size:3vh;
-    position: absolute;
+    position: relative;
     margin-left: 1vh;
     margin-bottom: 1vh;
     text-decoration: none;
