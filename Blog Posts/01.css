@@ -1,12 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1685478029/Sanaa%27s%20World/Midlight_under_the_sea_jgasow.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-image: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1689347038/Sanaa%27s%20World/Darker_under_the_sea-min_nz5wfm.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Change 'height' to 'min-height' */
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+}
 
 
   #post-background {
@@ -39,7 +42,7 @@ body {
     font-family: Garamond, serif;
     color:#FFF9E3;
     font-weight: 500;
-    font-size: 70px; /* Adjust the value to change the font size */
+    font-size: 8vh; /* Adjust the value to change the font size */
     margin-left: 30px;
   }
   
@@ -48,11 +51,13 @@ body {
     background-color: rgba(60, 112, 137, 0.8);
     padding: 0;
     display: inline-block;
-    margin-left: 30%;
-    margin-bottom: 0; /* Set margin-bottom to 0 */
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 0 auto; /* Add this line */
+    max-width: 65%; /* Add this line */
+    margin-bottom: 5vh;
+    overflow-y: auto;
+    
   }
+  
   
   .article-content .paragraph {
     margin-bottom: 0;
