@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://res.cloudinary.com/dbpmxkrgz/image/upload/v1689347038/Sanaa%27s%20World/Darker_under_the_sea-min_nz5wfm.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Change 'height' to 'min-height' */
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+}
+
+
+  #post-background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+ display: flex;
+    flex-direction: column;   
+  }
+  
+  .quote{
+    font-style: italic;
+    margin-bottom: 0;
+    font-family: Garamond, serif;
+    color:#FFF9E3;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 4vh;
+  }
+  .text.PageLinks {
+    font-family: Garamond, serif;
+    color: #FFF9E3;
+    font-size:3vh;
+    position: relative;
+    margin-left: 1vh;
+    margin-bottom: 1vh;
+    text-decoration: none;
+  }
+  
+  header h1 {
+    font-family: Garamond, serif;
+    color:#FFF9E3;
+    font-weight: 500;
+    font-size: 7vh; /* Adjust the value to change the font size */
+    margin-left: 30px;
+  }
+  
+  .article-content {
+    border: 1px dashed #FFF9E3;
+    background-color: rgba(60, 112, 137, 0.8);
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto; /* Add this line */
+    max-width: 65%; /* Add this line */
+    margin-bottom: 5vh;
+    overflow-y: auto;
+    
+  }
+  
+  
+  .article-content .paragraph {
+    margin-bottom: 0;
+    font-family: Garamond, serif;
+    color:#FFF9E3;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 3vh;
+
+
+  }
+  
+  .article-content .image {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: auto;
+  }
+
+#Indigint {
+    display: flex;
+    justify-content: center;
+    height: 150%;
+    width: auto;
+  }
+
+  @media only screen and (max-width: 768px) {
+    header h1 {
+      font-size: 5vh;
+    }
+    .article-content {
+      max-width: 95%;
+      margin-bottom: 25%;
+    }
+
+    .article-content .paragraph {
+      font-size: 2.5vh;
+    }
+
+    .quote{
+      font-size: 2.5vh;
+    }
+  }
