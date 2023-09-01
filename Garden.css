@@ -26,11 +26,11 @@ body {
       }
 
       .Arena-container1 {
-        width: 45%; /* Set the desired width for the container */
-        height: 75%; /* Set the desired height for the container */
+        width: 57%; /* Set the desired width for the container */
+        height: 85%; /* Set the desired height for the container */
         position: fixed;
         top: 10vh;
-        left: 5vh;
+        left: 10px;
       }
       
       .Arena-container1 iframe {
@@ -54,10 +54,10 @@ body {
         color: #FFF9E3;
         font-size: 4vh;
         position: absolute;
-        right: 5vh;
+        right: 0.5vh;
         bottom: 10vh;
         width: 40%;
-        margin: 0 auto;
+        margin: 1 auto;
         text-align: start;
       }
 
