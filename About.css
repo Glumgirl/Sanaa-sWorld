@@ -70,9 +70,17 @@ body {
         color: #FFF9E3;
       }
       
+      h2 {
+        font-family: Garamond, serif;
+        color: #FFF9E3;
+        margin-left: 15px;
+        margin-right: 5px;
+
+      }
+      
       .paragraph a {
         color: #FFF9E3;
-        text-decoration: none;
+        text-decoration: underline;
       }
       
 
