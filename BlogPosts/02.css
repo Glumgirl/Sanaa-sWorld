@@ -78,6 +78,12 @@ body {
     width: auto;
   }
 
+  .article-content a {
+    font-family: Garamond, serif;
+    color: #FFF9E3;
+    text-decoration: underline;
+  }
+
 #Indigint {
     display: flex;
     justify-content: center;
