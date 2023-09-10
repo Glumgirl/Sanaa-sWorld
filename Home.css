@@ -132,9 +132,6 @@ body {
     position: fixed;
     bottom: 40%;
     left: 10px;
-
-
-
   }
   
   h3 {
@@ -190,6 +187,12 @@ body {
     position: relative;
     overflow-x: hidden;
   }
+
+  .backgroundTwo{
+    z-index: 0;
+    position: relative;
+  }
+
 .credit {
     font-family: Garamond, serif;
     color: #FFF9E3;
@@ -216,6 +219,20 @@ body {
   text-size-adjust: auto;
   z-index: 9999;
   }
+}
+
+#Guestbook{
+  color: #FFF9E3;
+  font-family: Garamond, serif;
+  font-size: 25px;
+  font-weight:500;
+  letter-spacing: 5px;
+  text-decoration-line: none;
+  text-size-adjust: auto;
+  position: fixed;
+  bottom: 5%;
+  left: 10px;
+  z-index: 1;
 }
   /* #date {
   margin: top 0;
