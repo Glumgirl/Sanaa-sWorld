@@ -7,145 +7,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Sanaa's World </title>
     <link rel="stylesheet" href="Projects.css">
-    <style>
-        
-    </style>
+    <script type="text/javascript" src="Projects.js"></script>
 </head>
 <body>
-    <div class="Links">
-        <a href="Home.html">Home</a>
+    <div class="background-container">
+      <div class="Links">
+          <a href="Home.html">Home</a>
+      </div>
+
+      
+      <div id="draggableShape1" class="draggable" style="top:20%; right:20%;">
+         <p id="underconstruction"> Under Construction! Email me or see my portfolio in my 
+           <a href="https://sanaas.world/about"> About </a> page
+         </p> 
+</div>
+<!-- Repeat the structure for other shapes -->
+
+      <!-- <div id="draggableShape2" class="draggable" style="top: 20%; left: 20%;">
+  
+      </div>
+      <div id="draggableShape3" class="draggable" style="bottom: 35%; right:10%;">
+
+      </div>
+      <div id="draggableShape4" class="draggable" style="bottom:35%; left:10%;">
+  
+      </div>
+      <div id="draggableShape5" class="draggable" style="bottom: 10%; right:36%;">
+        </div>
     </div>
 
-    <div class="wrapper">
-      <div class="box" id="boxA" onclick="openModal('modal-A')">        
-        <img src="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1689355629/Sanaa%27s%20World/Projects/PXL_20220425_074251927_qcmtfl_zcohtb.jpg" alt="A lego set showing several doors facing towards each other, surrounded by lego plants to simulate a welcoming neighbourhood">
-
-      </div>
-      <div class="box" id="boxB" onclick="openModal('modal-B')">
-        <img src="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1687617073/Sanaa%27s%20World/Projects/20181004005331_mjbk4c.png" alt="A cute silver haired anime girl standing infront of an illustration of Shibuya, with the words 'Sara and the Mysterious Hacker Club' in Japanese at the top of the image">
-      </div>
-      <div class="box" id="boxC" onclick="openModal('modal-C')">
-         <img src="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1689355609/Sanaa%27s%20World/Projects/IMG_2220_uxfqzq_xbzzgz_ud4t2a.jpg" alt="4 teenagers hold red fabric between them in the shape of a pointed roof"> 
- </div>
-      <!-- Add more boxes with their own unique IDs -->
-    </div>
-    
-    <!-- Modals -->
-    <div id="modal-A" class="modal" onclick="closeModal('modal-A')">
-      <div class="modal-content">
-          <h2 class="ProjectTitle"> Hello Neighbours! </h2>
-        <div class="modal-left"> 
-        
-          <img class="ProjectImage" src="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1689355619/Sanaa%27s%20World/Projects/map_info_rfkom6_yv06ao.jpg" alt="A digitally drawn layout of a speculative app, showing a map and a side bar that categorises types of houses">
-        </div>
-        <div class="modal-right">
-         
-          <p class="projdesc">I co-designed and led the project, “Hello
-            neighbours!” which created a living resource
-            for residents, architects and stakeholders.
-            It uncovers the relationship between spaces
-            and neighbourly relations, giving a formal
-            framework to these seemingly intangible
-            relationships.This is the first step towards
-            developing community resilience and the
-            capacity to respond to crises on a hyper-local
-            level..</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="modal-B" class="modal" onclick="closeModal('modal-B')">
-      <div class="modal-content"> 
-        <h2 class="ProjectTitle"> Sara & The Mysterious Hacker Club </h2>
-        <div class="modal-left">
-         
-          <img class="ProjectImage" src="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1687617073/Sanaa%27s%20World/Projects/puzzle_2_maze_eng_v2_1_t2hroz.png" alt="Digital wireframe of a puzzle, that consists of a maze filled with various symbols">
-        </div>
-        <div class="modal-right">
-          
-          <p class="projdesc">Pretia Inc. is a Tokyo-based early stage Augmented
-            Reality (AR) startup. Mostly known for their placebased
-            AR puzzle games, they are also developing an
-            AR development program called AR Cloud.In 2019, I
-            localised the first and most popular game, “Sara and the
-            Mysterious Hacker Club”.
-            This involved re-designing the puzzles for a western
-            audience, scouting locations in Shibuya to be used,
-            and conducting play tests with the target market. As a
-            side project, I also worked on creating promotional AR
-            content for the game..</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="modal-C" class="modal" onclick="closeModal('modal-C')">
-      <div class="modal-content">
-        <h2 class="ProjectTitle">Around the Corner</h2>
-        <div class="modal-left">
-          
-          <img class="ProjectImage" src="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1689355639/Sanaa%27s%20World/Projects/IMG_2276_a2eqqc_gjf7oy_1_aos3tv.jpg" alt="Kingston School of Art students set up their life-sized prototypes in a car park as the sun sets">
-        </div>
-        <div class="modal-right">
-          
-          <p class="projdesc">Alongside my project partner, I co-led
-            Around the Corner, a research and design
-            project that gets young people engaged in
-            the design of their local built environment,
-            through a series of hands-on workshops.
-            These workshops utilised bespoke methods
-            that forge a link to their tacit and embodied
-            knowledge of public spaces, specifically
-            in Southwark, and a finalised design
-            for new public seating in Peckham.</p>
-            <p class ="furtherlinks">
-              <a class="furtherlinks" href="https://res.cloudinary.com/dbpmxkrgz/image/upload/v1688127378/Sanaa%27s%20World/Documents/ATC-methodcards_hgyjqj.pdf"> Take a look at the methods we developed here! </a>
-            </p>
-        </div>
-      </div>
-    </div>
 
     
-    <!-- Add modals for other boxes (B, C, D, E, F) in a similar manner -->
-    
 
-    
     <script>
-  function openModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "block";
-  }
+    function makeDraggable(elementId) {
+  var draggableElement = document.getElementById(elementId);
 
-  function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "none";
-  }
+  var isDragging = false;
+  var isExpanded = false; // Track the expanded state
+  var offsetX, offsetY;
 
-// Position the boxes dynamically
-window.addEventListener("DOMContentLoaded", positionBoxes);
+  draggableElement.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+    offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+  });
 
-function positionBoxes() {
-  var boxes = document.getElementsByClassName("box");
-  var viewportWidth = window.innerWidth;
-  var viewportHeight = window.innerHeight;
-  var boxWidth = boxes[0].offsetWidth;
-  var boxHeight = boxes[0].offsetHeight;
+  document.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    draggableElement.style.left = (e.clientX - offsetX) + 'px';
+    draggableElement.style.top = (e.clientY - offsetY) + 'px';
+  });
 
-  for (var i = 0; i < boxes.length; i++) {
-    var box = boxes[i];
-    var leftPos = getRandomPosition(0, viewportWidth - boxWidth);
-    var topPos = getRandomPosition(0, viewportHeight - boxHeight);
-    box.style.left = leftPos + "px";
-    box.style.top = topPos + "px";
-  }
+  document.addEventListener('mouseup', function () {
+    isDragging = false;
+  });
+
+  draggableElement.addEventListener('dblclick', function (e) {
+    e.stopPropagation();
+    isExpanded = !isExpanded;
+    draggableElement.classList.toggle('expanded', isExpanded);
+    if (isExpanded) {
+      adjustExpandedPosition(draggableElement);
+    }
+  });
 }
 
-function getRandomPosition(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// Rest of the code remains unchanged
 
-// Call the positionBoxes function when the DOM content is loaded
-window.addEventListener("DOMContentLoaded", positionBoxes);
+// Make each shape draggable with double-click expansion
+makeDraggable('draggableShape1');
+makeDraggable('draggableShape2');
+makeDraggable('draggableShape3');
+makeDraggable('draggableShape4');
+makeDraggable('draggableShape5');
+
+    </script> -->
 
 
-    </script>
-    
+</body>
+</html> 
