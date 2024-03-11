@@ -65,7 +65,7 @@ body {
         color: #FFF9E3;
         font-size: 3.5vh;
         position: fixed;
-        top: 55%;
+        top: 52%;
         left: 20px;
         width: 50%;
         margin: 0 auto;
@@ -79,7 +79,7 @@ body {
           font-size: 2vh;
           width: 65%;
           position: fixed;
-          top:60%
+          top:55%;
         }
 
         .PageTitle h1 {
