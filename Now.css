@@ -56,20 +56,21 @@ body {
         font-style: italic;
         text-size-adjust: auto;
         position: fixed;
-        bottom: 35%;
+        bottom: 45%;
         left: 20px;
       }
 
       .Status{
         font-family: Garamond, serif;
         color: #FFF9E3;
-        font-size: 4vh;
+        font-size: 3.5vh;
         position: fixed;
-        top: 65%;
+        top: 55%;
         left: 20px;
         width: 50%;
         margin: 0 auto;
         text-align: start;
+        margin-bottom: 5%;
       }
         
      
