@@ -19,6 +19,7 @@ body {
 }
 
 .Links {
+  position: fixed;
   margin-top:0;
   color:#FFF9E3;
   font-family: Garamond, serif;
@@ -39,30 +40,93 @@ body {
   text-decoration: none;
 }
 
-.draggable {
-  position: absolute;
-  width: 300px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: rgba(60, 112, 137, 0.7);
-  border: #FFF9E3 3.5px dotted;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: all 0.2s ease; /* Smooth transition for all properties */
-  z-index: 1; /* Set a higher z-index to bring the shape to the forefront */
-  color: #FFF9E3
-}
-.underconstruction{
-  size: 200px;
+.split-container{
+  display: flex;
+  height: 100%;
+  overflow-x: scroll;
 }
 
-
-.expanded {
-  width: 300px;
-  height: 400px;
-  border-radius: 10%;
-  background: rgba(60, 112, 137, 1);
-  z-index: 2; /* Set an even higher z-index when expanded */
+#ProjectList {
+  background-color: #3c7089;
+  position: fixed;
+   right: 0%;
+   bottom: 0%;
+   width: 50%;
+   height: 100%;
+   overflow: scroll;
+   margin: 0 auto;
+   text-align: start;
+   opacity: 90%;
 }
 
+
+.project {
+  margin-bottom: 100%;
+  margin-left: 10%;
+  font-family: Garamond, serif;
+}
+
+.project h1 {
+  font-size: 10vh;
+  color:#FFF9E3;
+  font-family: Garamond, serif;
+  margin-right: 10%;
+  
+}
+
+.project h4{
+  color: #FFF9E3;
+  margin-right: 10%;
+  font-size: 2.5vh;
+}
+
+.project p {
+  font-size: 2.5vh;
+  color: #fff9e3;
+  margin-right: 10%;
+}
+
+.project h3{
+  font-size:3vh ;
+  color: #FFF9E3;
+  text-decoration: dotted;
+  margin-right: 10%;
+}
+
+#ProjectImages {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center images horizontally */
+  justify-content: flex-start; /* Start from the left */
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+  width: 100%;
+}
+
+.image-container {
+  scroll-snap-align: ;
+  flex: 0 0 auto; 
+}
+
+#ProjectImages img {
+  width: 80vh; /* Maintain the original width */
+  height: 80vh; /* Adjust the height as needed, leaving padding at the top and bottom */
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+  margin-right: 10vh;
+  padding: 10px;
+}
+
+.scroll-container {
+  scroll-snap-type: both mandatory;
+}
+
+#ProjectList, #ProjectImages {
+  flex: 1;
+  scroll-snap-type: x mandatory;
+}
+
+.empty-container {
+ 
+}
 
