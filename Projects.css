@@ -130,3 +130,19 @@ body {
  
 }
 
+a:link { 
+  text-decoration: underline; 
+  color: #FFF9E3;
+} 
+a:visited { 
+  text-decoration: underline; 
+  color: #FFF9E3;
+} 
+a:hover { 
+  text-decoration: underline; 
+  color: #FFF9E3;
+} 
+a:active { 
+  text-decoration: underline; 
+  color: #FFF9E3;
+}
